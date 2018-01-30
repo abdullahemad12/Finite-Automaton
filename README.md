@@ -21,7 +21,7 @@ To import this package to your project simply add the following line to the top 
 
 Once you have defined the five tuples of your DFA and imported the package, you are ready to use the DFA object.
 
-** First you need to create a new object with the following encoding: **
+**First you need to create a new object with the following encoding:**
 
 `DFiniteAutomata variable_name = new DFiniteAutomata(StartState,states,alpha, acceptState);`
 
@@ -32,7 +32,7 @@ Where:
 - alpha is an array of chars,  i.e `char[] alpha = {'0', '1'};`, where each char belongs to the alphabet of the DFA.
 - acceptState is an array of ints representing the IDs of the of the accept state.
 
-** After creating the DFA object you need to define the transitions: ** 
+**After creating the DFA object you need to define the transitions:** 
 
 `variable_name.nextState(int stateID, int nextStateID, char c);`
 
@@ -42,7 +42,7 @@ where:
 - nextStateID is an int representing the next state.
 - c is a character representing the input alphabet.
 
-** Now you are ready to simulate the DFA **
+**Now you are ready to simulate the DFA**
 
 `variable_name.runDFA()`
 
